@@ -1,0 +1,13 @@
+<!--{if $team['id']}-->
+<div class="xit_fenxiang">
+                        分享到：<img src="/static/theme/xiutuan/img/xit_img5.jpg" /><a class="im" href="javascript:void(0);" id="deal-share-im-line" onclick="jQuery('.deal-share-{$team['id']}').toggle();">MSN,QQ好友</a><img src="/static/theme/xiutuan/img/xit_img1.jpg" /><a target="_blank" href="${share_sina($team)}" >新浪微博</a><img src="/static/theme/xiutuan/img/xit_img2.jpg" /><a target="_blank" href="${share_kaixin($team)}">开心</a><img src="/static/theme/xiutuan/img/xit_img3.jpg" /><a target="_blank" href="${share_renren($team)}">人人</a><img src="/static/theme/xiutuan/img/xit_img4.jpg" /><a target="_blank" href="${share_douban($team)}">豆瓣</a><img src="/static/theme/xiutuan/img/xit_img6.jpg" /><a target="_blank" href="${share_tencent($team)}">腾讯微博</a><img src="/static/theme/xiutuan/img/xit_img7.jpg" /><a target="_blank" href="${share_mail($team)}">邮件</a>
+                   </div>
+<div id="deal-share">
+	<div id="deal-share-im-c" class="deal-share-{$team['id']}">
+		<div class="deal-share-im-b">
+			<h3>复制下面的内容后通过 MSN 或 QQ 发送给好友：</h3>
+			<p><input id="share-copy-text" type="text" value="{$INI['system']['wwwprefix']}/team.php?id={$team['id']}&r={$login_user_id}" size="30" class="f-input" tip="复制成功，请粘贴到你的MSN或QQ上推荐给您的好友"/> <input id="share-copy-button" type="button" value="复制" class="formbutton" /></p>
+		</div>
+	</div>
+</div>
+<!--{/if}-->

@@ -1,0 +1,570 @@
+BODY {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.mbTxtB {
+	COLOR: #444
+}
+.btn_concern {
+	BORDER-BOTTOM: #d7d7d7 1px solid; BORDER-LEFT: #d7d7d7 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 7px; PADDING-RIGHT: 10px; DISPLAY: inline-block; BACKGROUND: #eaeaea; HEIGHT: 16px; COLOR: #666; FONT-SIZE: 12px; BORDER-TOP: #d7d7d7 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #d7d7d7 1px solid; TEXT-DECORATION: none; PADDING-TOP: 5px
+}
+.btn_concern .ico_rel {
+	WIDTH: 9px; BACKGROUND: url(../../images/shareout/icon.gif) no-repeat -10px -40px; HEIGHT: 10px; OVERFLOW: hidden
+}
+.btn_concern .ico_tip {
+	WIDTH: 7px; BACKGROUND: url(../../images/shareout/icon.gif) no-repeat 0px -40px; HEIGHT: 6px; OVERFLOW: hidden
+}
+.btn_concern IMG {
+	MARGIN-RIGHT: 4px
+}
+.miniPopLayer {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 8px
+}
+.tblog_wrap .wrap_top {
+	MARGIN: 0px 1px; DISPLAY: block; BACKGROUND: #c0dade; HEIGHT: 1px; OVERFLOW: hidden
+}
+.tblog_wrap .wrap_bottom {
+	MARGIN: 0px 1px; DISPLAY: block; BACKGROUND: #c0dade; HEIGHT: 1px; OVERFLOW: hidden
+}
+.tblog_wrap .tblog_main {
+	BORDER-LEFT: #c0dade 1px solid; PADDING-BOTTOM: 10px; BACKGROUND: #fff; OVERFLOW: hidden; BORDER-RIGHT: #c0dade 1px solid
+}
+.tblog_wrap .tblog_header {
+	BORDER-BOTTOM: #c0dade 1px solid; BORDER-LEFT: #effafc 1px solid; BACKGROUND: #d6f3f7; HEIGHT: 30px; COLOR: #333; OVERFLOW: hidden; BORDER-TOP: #effafc 1px solid; BORDER-RIGHT: #effafc 1px solid
+}
+.tblog_wrap .tblog_header H1 {
+	POSITION: relative; PADDING-LEFT: 10px; FLOAT: left; PADDING-TOP: 5px
+}
+.tblog_wrap .tblog_header H1 A.mini_logo {
+	POSITION: absolute; WIDTH: 19px; DISPLAY: block; BACKGROUND: url(../../images/common/logo_mini.png?id=201103311828) no-repeat 0px 0px; HEIGHT: 16px; TOP: 5px; LEFT: 11px; _background-image: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=image,src='http://img.t.sinajs.cn/t35/style/images/common/logo_mini.png?id=201103311828')
+}
+.tblog_wrap .tblog_header H1 A.title {
+	POSITION: relative; PADDING-BOTTOM: 0px; PADDING-LEFT: 25px; PADDING-RIGHT: 0px; DISPLAY: inline-block; PADDING-TOP: 4px
+}
+.tblog_wrap .tblog_header H1 A.title {
+	COLOR: #333
+}
+.tblog_wrap .tblog_header H1 A.title:link {
+	COLOR: #333
+}
+.tblog_wrap .tblog_header H1 A.title:visited {
+	COLOR: #333
+}
+.tblog_wrap .tblog_header H1 A.title:hover {
+	COLOR: #333
+}
+.tblog_wrap H1 A:hover {
+	TEXT-DECORATION: none
+}
+.tblog_wrap .fans_top {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; OVERFLOW: hidden; PADDING-TOP: 12px
+}
+.tblog_wrap .fans_top .fansphoto {
+	MARGIN: 0px 11px 0px 9px; WIDTH: 52px; BACKGROUND: url(../../images/iframe/bg_face.gif); FLOAT: left; HEIGHT: 52px; _display: inline; _margin-right: 8px
+}
+.tblog_wrap .fans_top UL LI {
+	PADDING-RIGHT: 9px; MARGIN-BOTTOM: 4px; HEIGHT: 17px; OVERFLOW: hidden
+}
+.tblog_wrap .fans_top UL LI SPAN {
+	DISPLAY: inline-block; COLOR: #8d8d8d
+}
+.tblog_wrap .fans_top UL LI STRONG {
+	DISPLAY: inline-block; FONT-SIZE: 14px; CURSOR: hand
+}
+.tblog_wrap .fans_top UL LI.btn {
+	MARGIN: 10px 0px 0px; HEIGHT: auto
+}
+.tblog_wrap .fans_top UL LI IMG.iconvip {
+	MARGIN: 0px 8px 0px 3px; BACKGROUND: url(../../images/iframe/sicon.gif?id=201108041100) -32px -20px
+}
+.tblog_wrap .fans_top .no_tblog {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 17px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 21px
+}
+.tblog_wrap .mbBtnAdd {
+	LINE-HEIGHT: 25px; PADDING-LEFT: 12px; DISPLAY: inline-block; BACKGROUND-POSITION: 0px 0px; HEIGHT: 25px; COLOR: #fff
+}
+.tblog_wrap .mbBtnAdd EM {
+	PADDING-RIGHT: 12px; DISPLAY: inline-block; BACKGROUND-POSITION: right -35px; HEIGHT: 25px; COLOR: #fff !important; CURSOR: hand
+}
+.tblog_wrap A.mbBtnAdd:hover {
+	BACKGROUND-POSITION: 0px 0px; TEXT-DECORATION: none
+}
+.tblog_wrap A.mbBtnAdd:hover EM {
+	DISPLAY: inline-block; BACKGROUND-POSITION: right -35px; HEIGHT: 25px
+}
+.tblog_wrap A.mbBtnAdd .add {
+	WIDTH: 8px; BACKGROUND: url(../../images/iframe/add.gif) no-repeat 0px 0px; HEIGHT: 8px; VERTICAL-ALIGN: 0px; MARGIN-RIGHT: 5px
+}
+.tblog_wrap .mbBtnAdd {
+	BACKGROUND-IMAGE: url(../../images/iframe/mbbtnbig.gif)
+}
+.tblog_wrap .mbBtnAdd EM {
+	BACKGROUND-IMAGE: url(../../images/iframe/mbbtnbig.gif)
+}
+.tblog_wrap .blog_list .list_wrap {
+	WIDTH: 100%; OVERFLOW: hidden
+}
+.tblog_wrap .blog_list .list_wrap .disconn {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 30px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BACKGROUND: url(../../images/iframe/bg_dissconn.jpg) no-repeat center 48px; PADDING-TOP: 150px
+}
+.tblog_wrap .blog_list .list_wrap .disconn P {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 10px
+}
+.tblog_wrap .blog_list .list_wrap .disconn P A {
+	FONT-FAMILY: "宋体"
+}
+.tblog_wrap .blog_list UL {
+	MARGIN: 3px 0px -4px
+}
+.tblog_wrap .blog_list UL LI {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 9px; PADDING-RIGHT: 9px; MARGIN-BOTTOM: -3px; PADDING-TOP: 0px
+}
+.tblog_wrap .blog_list UL LI.focus {
+	BACKGROUND: #ffffea
+}
+.tblog_wrap .blog_list DL {
+	PADDING-BOTTOM: 7px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BACKGROUND: url(../../images/common/linedot3.gif) repeat-x 0px bottom; OVERFLOW: hidden; PADDING-TOP: 5px
+}
+.tblog_wrap .blog_list DL DD {
+	LINE-HEIGHT: 18px
+}
+.tblog_wrap .blog_list DL DD.msg {
+	WORD-WRAP: break-word; MARGIN-BOTTOM: 4px; WORD-BREAK: break-all
+}
+.tblog_wrap .blog_list UL LI.focus DD.msg {
+	CURSOR: hand
+}
+.tblog_wrap .blog_list DL DD P {
+	FLOAT: left
+}
+.tblog_wrap .blog_list DL DD SPAN.act {
+	WHITE-SPACE: nowrap; FLOAT: right; VISIBILITY: hidden
+}
+.tblog_wrap .blog_list LI.focus DL DD SPAN.act {
+	VISIBILITY: visible
+}
+.tblog_wrap .blog_list DL DD SPAN.act A {
+	FONT-FAMILY: "宋体"
+}
+.tblog_wrap .blog_list DL DD SPAN.act EM {
+	LINE-HEIGHT: 12px; MARGIN: 2px 1px 0px; COLOR: #c6c6c6; OVERFLOW: hidden
+}
+.tblog_wrap .fans_list {
+	WIDTH: 100%; OVERFLOW: hidden
+}
+.tblog_wrap .fans_list .nofans {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 17px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 20px
+}
+.tblog_wrap .fans_list H4 {
+	LINE-HEIGHT: 30px; MARGIN: 5px 9px 2px; HEIGHT: 30px; OVERFLOW: hidden
+}
+.tblog_wrap .fans_list H4 SPAN {
+	FLOAT: left
+}
+.tblog_wrap .fans_list H4 EM {
+	FONT-FAMILY: Arial; COLOR: #5093d5
+}
+.tblog_wrap .fans_list H4 STRONG {
+	FONT-WEIGHT: bold
+}
+.tblog_wrap .fans_list H4 A.all {
+	FONT-FAMILY: "宋体"; FLOAT: right
+}
+.tblog_wrap .fans_list UL {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.tblog_wrap .fans_list UL LI {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 12px; MARGIN: 0px 5px; WIDTH: 50px; FLOAT: left; HEIGHT: 72px; OVERFLOW: hidden; _display: inline
+}
+.tblog_wrap .fans_list UL LI A.pic {
+	WIDTH: 50px; DISPLAY: block; MARGIN-BOTTOM: 6px; HEIGHT: 50px
+}
+.tblog_wrap .fans_list UL LI A.name {
+	FONT-FAMILY: "宋体"; VERTICAL-ALIGN: middle
+}
+.tblog_wrap A.bg_arrow {
+	BACKGROUND-IMAGE: url(../../images/iframe/ico_tblog_arrow.gif); TEXT-ALIGN: center; MARGIN: 0px 9px; DISPLAY: block; BACKGROUND-REPEAT: repeat-x; HEIGHT: 7px; PADDING-TOP: 3px
+}
+.tblog_wrap A.bg_arrow IMG {
+	BACKGROUND-IMAGE: url(../../images/iframe/ico_tblog_arrow.gif)
+}
+.tblog_wrap A.bg_arrow:hover {
+	BACKGROUND-POSITION: 0px -46px
+}
+.tblog_wrap A.arrow_up IMG {
+	BACKGROUND-POSITION: 0px -20px
+}
+.tblog_wrap A.arrow_up:hover IMG {
+	BACKGROUND-POSITION: 0px -144px
+}
+.tblog_wrap A.arrow_down IMG {
+	BACKGROUND-POSITION: 0px -32px
+}
+.tblog_wrap A.arrow_down:hover IMG {
+	BACKGROUND-POSITION: 0px -148px
+}
+.tblog_header A.title {
+	COLOR: #444
+}
+.tblog_header A.title:hover {
+	COLOR: #444
+}
+.tblog_header A.title:visited {
+	COLOR: #444
+}
+.skin01 .wrap_top {
+	BACKGROUND: #c0dade
+}
+.skin01 .tblog_main {
+	BORDER-LEFT: #c0dade 1px solid; BORDER-RIGHT: #c0dade 1px solid
+}
+.skin01 .wrap_bottom {
+	BACKGROUND: #c0dade
+}
+.skin01 .tblog_header {
+	BORDER-BOTTOM: #c0dade 1px solid; BORDER-LEFT: #effafc 1px solid; BACKGROUND: #d6f3f7; BORDER-TOP: #effafc 1px solid; BORDER-RIGHT: #effafc 1px solid
+}
+.skin02 .wrap_top {
+	BACKGROUND: #cacaca
+}
+.skin02 .tblog_main {
+	BORDER-LEFT: #cacaca 1px solid; BACKGROUND: #fafafa; BORDER-RIGHT: #cacaca 1px solid
+}
+.skin02 .wrap_bottom {
+	BACKGROUND: #cacaca
+}
+.skin02 .tblog_header {
+	BORDER-BOTTOM: #cacaca 1px solid; BORDER-LEFT: #f3f3f3 1px solid; BACKGROUND: #e1e1e1; BORDER-TOP: #f3f3f3 1px solid; BORDER-RIGHT: #f3f3f3 1px solid
+}
+.skin02 A {
+	COLOR: #5093d5
+}
+.skin02 A:link {
+	COLOR: #5093d5
+}
+.skin02 A:hover {
+	COLOR: #5093d5
+}
+.skin02 A:visited {
+	COLOR: #5093d5
+}
+.skin02 .fans_list H4 EM {
+	COLOR: #5093d5
+}
+.skin03 .wrap_top {
+	BACKGROUND: #c5d5b4
+}
+.skin03 .tblog_main {
+	BORDER-LEFT: #c5d5b4 1px solid; BACKGROUND: #f7fcf6; BORDER-RIGHT: #c5d5b4 1px solid
+}
+.skin03 .wrap_bottom {
+	BACKGROUND: #c5d5b4
+}
+.skin03 .tblog_header {
+	BORDER-BOTTOM: #c5d5b4 1px solid; BORDER-LEFT: #f1f8e9 1px solid; BACKGROUND: #dbedc8; BORDER-TOP: #f1f8e9 1px solid; BORDER-RIGHT: #f1f8e9 1px solid
+}
+.skin03 A {
+	COLOR: #6a9754
+}
+.skin03 A:link {
+	COLOR: #6a9754
+}
+.skin03 A:hover {
+	COLOR: #6a9754
+}
+.skin03 A:visited {
+	COLOR: #6a9754
+}
+.skin03 .fans_list H4 EM {
+	COLOR: #6a9754
+}
+.skin03 A.bg_arrow:hover {
+	BACKGROUND-POSITION: 0px -56px
+}
+.skin03 A.arrow_up:hover IMG {
+	BACKGROUND-POSITION: 0px -152px
+}
+.skin03 A.arrow_down:hover IMG {
+	BACKGROUND-POSITION: 0px -156px
+}
+.skin04 .wrap_top {
+	BACKGROUND: #dec5ba
+}
+.skin04 .tblog_main {
+	BORDER-LEFT: #dec5ba 1px solid; BACKGROUND: #fff9f5; BORDER-RIGHT: #dec5ba 1px solid
+}
+.skin04 .wrap_bottom {
+	BACKGROUND: #dec5ba
+}
+.skin04 .tblog_header {
+	BORDER-BOTTOM: #dec5ba 1px solid; BORDER-LEFT: #fdf3ef 1px solid; BACKGROUND: #f9e0d6; BORDER-TOP: #fdf3ef 1px solid; BORDER-RIGHT: #fdf3ef 1px solid
+}
+.skin04 A {
+	COLOR: #b3726d
+}
+.skin04 A:link {
+	COLOR: #b3726d
+}
+.skin04 A:hover {
+	COLOR: #b3726d
+}
+.skin04 A:visited {
+	COLOR: #b3726d
+}
+.skin04 .fans_list H4 EM {
+	COLOR: #b3726d
+}
+.skin04 A.bg_arrow:hover {
+	BACKGROUND-POSITION: 0px -66px
+}
+.skin04 A.arrow_up:hover IMG {
+	BACKGROUND-POSITION: 0px -160px
+}
+.skin04 A.arrow_down:hover IMG {
+	BACKGROUND-POSITION: 0px -164px
+}
+.skin05 .wrap_top {
+	BACKGROUND: #e5e5e5
+}
+.skin05 .tblog_main {
+	BORDER-LEFT: #e5e5e5 1px solid; BORDER-RIGHT: #e5e5e5 1px solid
+}
+.skin05 .wrap_bottom {
+	BACKGROUND: #e5e5e5
+}
+.skin05 .tblog_header {
+	BORDER-BOTTOM: #e5e5e5 1px solid; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BACKGROUND: #fff; BORDER-LEFT-STYLE: none
+}
+.skin06 .wrap_top {
+	BACKGROUND: #c5bade
+}
+.skin06 .tblog_main {
+	BORDER-LEFT: #c5bade 1px solid; BACKGROUND: #f9f4ff; BORDER-RIGHT: #c5bade 1px solid
+}
+.skin06 .wrap_bottom {
+	BACKGROUND: #c5bade
+}
+.skin06 .tblog_header {
+	BORDER-BOTTOM: #ccc5de 1px solid; BORDER-LEFT: #f4f1fc 1px solid; BACKGROUND: #e3dbf7; BORDER-TOP: #f4f1fc 1px solid; BORDER-RIGHT: #f4f1fc 1px solid
+}
+.skin06 A {
+	COLOR: #674ba7
+}
+.skin06 A:link {
+	COLOR: #674ba7
+}
+.skin06 A:hover {
+	COLOR: #674ba7
+}
+.skin06 A:visited {
+	COLOR: #674ba7
+}
+.skin06 .fans_list H4 EM {
+	COLOR: #674ba7
+}
+.skin06 A.bg_arrow:hover {
+	BACKGROUND-POSITION: 0px -76px
+}
+.skin06 A.arrow_up:hover IMG {
+	BACKGROUND-POSITION: 0px -168px
+}
+.skin06 A.arrow_down:hover IMG {
+	BACKGROUND-POSITION: 0px -172px
+}
+.skin07 .wrap_top {
+	BACKGROUND: #e2db9f
+}
+.skin07 .tblog_main {
+	BORDER-LEFT: #e2db9f 1px solid; BACKGROUND: #fffef4; BORDER-RIGHT: #e2db9f 1px solid
+}
+.skin07 .wrap_bottom {
+	BACKGROUND: #e2db9f
+}
+.skin07 .tblog_header {
+	BORDER-BOTTOM: #e2db9f 1px solid; BORDER-LEFT: #fefbe0 1px solid; BACKGROUND: #fcf4b1; BORDER-TOP: #fefbe0 1px solid; BORDER-RIGHT: #fefbe0 1px solid
+}
+.skin07 A {
+	COLOR: #9f8c40
+}
+.skin07 A:link {
+	COLOR: #9f8c40
+}
+.skin07 A:hover {
+	COLOR: #9f8c40
+}
+.skin07 A:visited {
+	COLOR: #9f8c40
+}
+.skin07 .fans_list H4 EM {
+	COLOR: #9f8c40
+}
+.skin08 .wrap_top {
+	BACKGROUND: #bebaa0
+}
+.skin08 .tblog_main {
+	BORDER-LEFT: #bebaa0 1px solid; BACKGROUND: #f3efda; BORDER-RIGHT: #bebaa0 1px solid
+}
+.skin08 .wrap_bottom {
+	BACKGROUND: #bebaa0
+}
+.skin08 .tblog_header {
+	BORDER-BOTTOM: #bebaa0 1px solid; BORDER-LEFT: #eeece0 1px solid; BACKGROUND: #d4cfb2; BORDER-TOP: #eeece0 1px solid; BORDER-RIGHT: #eeece0 1px solid
+}
+.skin08 A {
+	COLOR: #746c4b
+}
+.skin08 A:link {
+	COLOR: #746c4b
+}
+.skin08 A:hover {
+	COLOR: #746c4b
+}
+.skin08 A:visited {
+	COLOR: #746c4b
+}
+.skin08 .fans_list H4 EM {
+	COLOR: #746c4b
+}
+.skin08 .blog_list UL LI.focus {
+	BACKGROUND: #e6e1c6
+}
+.skin08 A.bg_arrow {
+	BACKGROUND-POSITION: 0px -106px
+}
+.skin08 A.bg_arrow:hover {
+	BACKGROUND-POSITION: 0px -96px
+}
+.skin08 A.arrow_up IMG {
+	BACKGROUND-POSITION: 0px -208px
+}
+.skin08 A.arrow_down IMG {
+	BACKGROUND-POSITION: 0px -212px
+}
+.skin08 A.arrow_up:hover IMG {
+	BACKGROUND-POSITION: 0px -184px
+}
+.skin08 A.arrow_down:hover IMG {
+	BACKGROUND-POSITION: 0px -188px
+}
+.skin09 .wrap_top {
+	BACKGROUND: #bacada
+}
+.skin09 .tblog_main {
+	BORDER-LEFT: #bacada 1px solid; BACKGROUND: #fafcff; BORDER-RIGHT: #bacada 1px solid
+}
+.skin09 .wrap_bottom {
+	BACKGROUND: #bacada
+}
+.skin09 .tblog_header {
+	BORDER-BOTTOM: #bacada 1px solid; BORDER-LEFT: #ecf3fa 1px solid; BACKGROUND: #cfe1f3; BORDER-TOP: #ecf3fa 1px solid; BORDER-RIGHT: #ecf3fa 1px solid
+}
+.skin09 A {
+	COLOR: #5093d5
+}
+.skin09 A:link {
+	COLOR: #5093d5
+}
+.skin09 A:hover {
+	COLOR: #5093d5
+}
+.skin09 A:visited {
+	COLOR: #5093d5
+}
+.skin09 .fans_list H4 EM {
+	COLOR: #5093d5
+}
+.skin09 A.bg_arrow:hover {
+	BACKGROUND-POSITION: 0px -36px
+}
+.skin09 A.arrow_up:hover IMG {
+	BACKGROUND-POSITION: 0px -136px
+}
+.skin09 A.arrow_down:hover IMG {
+	BACKGROUND-POSITION: 0px -140px
+}
+.skin10 .wrap_top {
+	BACKGROUND: #3a3a3a
+}
+.skin10 .tblog_main {
+	BORDER-LEFT: #3a3a3a 1px solid; BACKGROUND: #2b2b2b; BORDER-RIGHT: #3a3a3a 1px solid
+}
+.skin10 .wrap_bottom {
+	BACKGROUND: #3a3a3a
+}
+.skin10 .tblog_header {
+	BORDER-BOTTOM: #3f3f3f 1px solid; BORDER-LEFT: #7e7e7e 1px solid; BACKGROUND: #464646; BORDER-TOP: #7e7e7e 1px solid; BORDER-RIGHT: #7e7e7e 1px solid
+}
+.skin10 A {
+	COLOR: #558caa
+}
+.skin10 A:link {
+	COLOR: #558caa
+}
+.skin10 A:hover {
+	COLOR: #558caa
+}
+.skin10 A:visited {
+	COLOR: #558caa
+}
+.skin10 .fans_list H4 EM {
+	COLOR: #558caa
+}
+.skin10 .blog_list UL LI.focus {
+	BACKGROUND: #3c3c3c
+}
+.skin10 .mbTxtB {
+	COLOR: #dcdcdc
+}
+.skin10 .fans_list H4 SPAN {
+	COLOR: #dcdcdc
+}
+.skin10 .fans_top .no_tblog {
+	COLOR: #dcdcdc
+}
+.skin10 .blog_list .list_wrap .disconn {
+	COLOR: #dcdcdc
+}
+.skin10 .fans_list .nofans {
+	COLOR: #dcdcdc
+}
+.skin10 .fans_top UL LI SPAN {
+	COLOR: #dcdcdc
+}
+.skin10 .tblog_header A.title {
+	COLOR: #dcdcdc
+}
+.skin10 .tblog_header A.title:hover {
+	COLOR: #dcdcdc
+}
+.skin10 .tblog_header A.title:visited {
+	COLOR: #dcdcdc
+}
+.skin10 .tblog_header H1 A.title {
+	COLOR: #dcdcdc
+}
+.skin10 .tblog_header H1 A.title:link {
+	COLOR: #dcdcdc
+}
+.skin10 .tblog_header H1 A.title:visited {
+	COLOR: #dcdcdc
+}
+.skin10 .tblog_header H1 A.title:hover {
+	COLOR: #dcdcdc
+}
+.skin10 A.bg_arrow {
+	BACKGROUND-POSITION: 0px -126px
+}
+.skin10 A.bg_arrow:hover {
+	BACKGROUND-POSITION: 0px -116px
+}
+.skin10 A.arrow_up IMG {
+	BACKGROUND-POSITION: 0px -192px
+}
+.skin10 A.arrow_down IMG {
+	BACKGROUND-POSITION: 0px -196px
+}
+.skin10 A.arrow_up:hover IMG {
+	BACKGROUND-POSITION: 0px -200px
+}
+.skin10 A.arrow_down:hover IMG {
+	BACKGROUND-POSITION: 0px -204px
+}

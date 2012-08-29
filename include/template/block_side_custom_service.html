@@ -1,0 +1,21 @@
+<div class="custom-service">
+				<p class="im">
+<!--${
+	$msns = preg_split('/[,\s]+/',$INI['system']['kefumsn'],-1,PREG_SPLIT_NO_EMPTY);
+	$qqs = preg_split('/[,\s]+/',$INI['system']['kefuqq'],-1,PREG_SPLIT_NO_EMPTY);
+}-->
+				<!--{loop $msns $msnone}-->
+				<!--{if trim($msnone)}-->
+					<a id="service-msn-help" href="msnim:chat?contact={$msnone}"><img src="/static/css/i/button-custom-msn.gif" /></a>
+				<!--{/if}-->
+				<!--{/loop}-->
+				<!--{loop $qqs $qqone}-->
+				<!--{if preg_match('/http/i', $qqone)}-->
+					{$qqone}
+				<!--{else}-->
+					<a href="http://wpa.qq.com/msgrd?v=3&uin={$qqone}&site={$INI['system']['sitename']}&menu=yes" target="_blank"><img SRC="/static/css/i/button-custom-qq.gif" alt=""></a>
+				<!--{/if}-->
+				<!--{/loop}-->
+				</p>
+				<p class="time">周一至周六 9:00-18:00</p>
+			</div>

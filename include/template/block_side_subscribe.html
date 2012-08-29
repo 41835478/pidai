@@ -1,0 +1,24 @@
+<div class="sbox side-business">
+  <div class="sbox-content">
+    <div class="tip">
+      <h2><img src="/static/theme/xiutuan/css/i/sidebar_t3.png" alt="想知道" /></h2>
+      <p><img src="/static/theme/xiutuan/css/i/tomorrow.png" alt="下期的团购是什么" /></p>
+      <div class="deal-subscribe">
+        <div class="body" id="deal-subscribe-body">
+          <form id="deal-subscribe-form" method="post" action="/subscribe.php">
+            <table class="address">
+              <tr>
+          <td><input type="text" name="email" class="f-text" id="deal-subscribe-form-email" xtip="请输入您的Email..." value="" /></td>
+                <td><input type="hidden" name="city_id" value="{$city['id']}" />
+                  <input type="image" src="/static/theme/xiutuan/css/i/button-subscribe.gif" value="订阅" /></td>
+              </tr>
+            </table>
+          </form>
+          <p class="text">
+		  &raquo; <a href="javascript:;"  onclick="X.miscajax('sms','subscribe');">短信订阅，免费！</a>
+		  &nbsp;&nbsp; <a href="javascript:;" onclick="X.miscajax('sms','unsubscribe');" class="linkG">取消手机订阅</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

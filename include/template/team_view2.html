@@ -1,0 +1,359 @@
+<!--{include header}-->
+   <!--xit_banner2-->
+   <script src="/static/js/xit_jsqiehuan.js" type="text/javascript"></script>
+   <div class="xit_dabanner"><script type="text/javascript" src="/banner.php?location=top"></script></div>
+<!--xiangqing-->
+    <div class="xit_xiangqing">
+        <!--zuo-->
+         <div class="xit_xiangqing_zuo">
+              <div class="xit_zuoshang">
+              <div><img src="/static/theme/xiutuan/img/xit_xqshang.jpg" /></div>
+              <div class="xit_xqzgong">
+                   <!--fenxiangdao--><div id="dealca" style="float:left;width:290px; border:#999 solid 1px; padding-left:10px; height:80px;display:none;background-color:#FFF;margin:27px 0 0 355px; position:absolute;">
+<strong style='clear:both;width:100%;'><a style="float:right; margin-right:5px;" href="javascript:void(0);" onclick="showqq();">关闭</a><br>把下面的内容通过QQ或MSN发送给好友：</strong>
+<br/>
+        <input type="text" style="border:1px solid #A6A6A6; background-color:#fff; height:20px; line-height:20px;width:280px;margin-left:0px;margin-left:-355px\9;*margin-left:-355px;_margin-left:-300px;" value="{$INI['system']['wwwprefix']}/team.php?id={$team['id']}&r={$login_user_id}" />
+</div>
+                   <div class="xit_fenxiang">
+                        分享到：<img src="/static/theme/xiutuan/img/xit_img1.jpg" /><a target="_blank" href="${share_sina($team)}" onclick="javascript:_gaq.push(['_trackEvent','share_button','新浪微博','{$team['title']}'])" >新浪微博</a>
+                        <img src="/static/theme/xiutuan/img/xit_img2.jpg" /><a target="_blank" href="${share_kaixin($team)}" onclick="javascript:_gaq.push(['_trackEvent','share_button','开心','{$team['title']}'])">开心</a>
+                        <img src="/static/theme/xiutuan/img/xit_img3.jpg" /><a target="_blank" href="${share_renren($team)}" onclick="javascript:_gaq.push(['_trackEvent','share_button','人人','{$team['title']}'])">人人</a>
+                        <img src="/static/theme/xiutuan/img/xit_img4.jpg" /><a target="_blank" href="${share_douban($team)}" onclick="javascript:_gaq.push(['_trackEvent','share_button','豆瓣','{$team['title']}'])">豆瓣</a>
+                        <img src="/static/theme/xiutuanimg/xit_img5.jpg" /><a id="deal-share-im" href="javascript:void(0);" class="im" onclick="javascript:showqq();gaq.push(['_trackEvent','share_button','MSN,QQ好友','{$team['title']}']);">MSN,QQ好友</a>
+                        <img src="/static/theme/xiutuan/img/xit_img6.jpg" /><a target="_blank" href="${share_qqZone($team)}" onclick="javascript:_gaq.push(['_trackEvent','share_button','QQ空间','{$team['title']}'])">QQ空间</a>
+                        <img src="/static/theme/xiutuan/img/xit_img7.jpg" /><a target="_blank" href="${share_51com($team)}" onclick="javascript:_gaq.push(['_trackEvent','share_button','51.com','{$team['title']}'])">51.com</a>
+                        <img src="/static/theme/xiutuan/img/sohu_16icon.gif" /><a target="_blank" href="${share_sohu($team)}"  onclick="javascript:_gaq.push(['_trackEvent','share_button','搜狐微博','{$team['title']}'])" title="分享到搜狐微博">搜狐微博</a>
+                   </div>
+                   
+                   <h2>
+                   <!--{if $team['close_time']==0}-->
+                    <span>今日团购推荐：</span>
+                    <!--{/if}-->
+					{$team['title']}   
+                   </h2>
+                   
+                   <div class="xit_goumai">
+                        <div class="xit_goumai_zuo">
+                             <div class="xit_goumai_shang">
+                                 <!--{if ($team['max_number']<=$team['now_number'])&&$team['max_number']>0}-->
+	<div class="xit_fudong_jieshu"><p>{$currency}<span>${moneyit($team['team_price'])}</span></p><img src="/static/theme/YellowUMZZ/img/xit_mgl.jpg" /></div>
+	<!--{elseif $team['close_time']}-->
+	<div class="xit_fudong_jieshu"><p>{$currency}<span>${moneyit($team['team_price'])}</span></p><img src="/static/theme/YellowUMZZ/img/xit_yijieshu.jpg" /></div>
+	<!--{elseif $buy_link=="" && $sub_link!=''}-->
+	<div class="xit_fudong"><p>{$currency}<span>${moneyit($team['team_price'])}</span></p> <a id="sub_link" href="{$sub_link}"><img src="/static/theme/YellowUMZZ/img/xit_yyz.jpg" /></a></div>
+	<!--{else}-->
+	<div class="xit_fudong"><p>{$currency}<span>${moneyit($team['team_price'])}</span></p>
+	<a id="buy_link" href="{$buy_link}" onclick="javascript:gaq_push(['_trackEvent','buy_button','buy','${getCB($team['group_id'],'group')}/{$team['product']}'])">
+	<img src="/static/theme/YellowUMZZ/img/xit_dagoumai.jpg"/>
+	</a>
+    </div>
+	<!--{/if}-->
+                                
+                                  
+                                  
+                                  <table class="tuan_info_tb" width="96%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                         <tbody><tr>
+                                                <th width="35%">原价</th>
+                                                <th width="30%">折扣</th>
+                                                <th width="35%"><span>节省</span></th>
+                                         </tr>
+                                          <tr>
+                                                <td>￥<del>${moneyit($team['market_price'])}</del></td>
+                                                <td>${team_discount($team)}</td>
+                                                <td><span>{$currency}{$discount_price}</span></td>
+                                          </tr>
+    
+                                 </tbody></table>
+                             </div>
+                             
+                             
+                             <div class="xit_goumaichenggong">
+                               
+                                 
+                                 
+                                  <div class="xit_tuan_user">
+                                      <!--{if $state_time==1}-->
+	<!-- {if $state_teamsub} -->
+	<em><strong>{$team_sub_count}</strong></em>
+	<!-- {else} -->
+	<em><strong>0</strong></em>
+	<!-- {/if} -->
+<!--{else}-->
+  <em><strong>{$team['now_number']}</strong></em>
+<!--{/if}-->
+<!-- {if $team['draw_id']>0} -->
+人已参加抽奖
+<!--{else}-->
+	<!-- {if $state_teamsub} -->
+ 人已预约
+    <!-- {else} -->
+  人已购买
+    <!-- {/if} -->
+<br />
+数量有限，下单要快哟
+<!--{/if}-->
+                                  </div>
+                                
+					                       <!--{if $team['close_time']==0}-->
+                                    <!--{if $team['state']=='none'}-->
+                                    <div class="tuan_status s3">
+                                        <div class="bg_s">还差<strong><!--{if $state_time==1}-->{$team['min_number']}<!--{else}-->{$team['min_number']-$team['now_number']}<!--{/if}--></strong>个成团,可继续购买<br>
+                                        </div>
+                                    </div>
+                                    <!--{else}-->
+                                        <!--{if $state_time==1}-->
+                                            <div class="tuan_status s3">
+                                                <div class="bg_s">还差<strong>{$team['min_number']}</strong>个成团,可继续购买<br></div>
+                                            </div>
+                                        <!--{else}-->
+                                            <div class="tuan_status s1" >
+                                                <div class="bg_s">
+                                                    <h3>团购已成功</h3>
+                                                    <!--{if $team['max_number']>$team['now_number']||$team['max_number']==0}-->
+                                                    可继续购买
+                                                    <!--{/if}-->
+                                                </div>
+                                            </div>
+                                        <!--{/if}-->
+                                        
+                                    <!--{/if}-->
+                                <!--{else}-->
+                                    <div class="tuan_status s2">
+                                        <div class="bg_s">
+                                        <h3>团购已满</h3>
+                                        关注下一团
+                                        </div>
+                                    </div>
+                                <!--{/if}-->
+                                  
+                                  <div class="xit_tuan_time">
+                                                                    
+                                    <!--{if $team['close_time']}-->
+                                    <h3>本团购结束于</h3>
+                                    <div class="limitdate">
+                                        <p class="deal-buy-ended">${date('Y-m-d', $team['close_time'])}&nbsp;
+                                        ${date('H:i:s', $team['close_time'])}</p>
+                                    </div>
+                                    <!--{else}-->
+                                        <!--{if $state_time==1}-->
+                                        距离开团时间还有：<br />
+                                    <div id="remainSeconds" style="display:none">{$diff_time}</div>
+                                    <p id="remainTime" class="deal-buy-ended">
+                                        <input  style="width:36px" readonly="true" type="text" value="{$timer['hour']}"/>时
+                                        <input readonly="true" type="text" value="{$timer['minute']}"/>分
+                                        <input style="width:36px" readonly="true" type="text" value="{$timer['second']}"/>秒
+                                    </p>
+                                        <!--{/if}-->
+                                        <!--{if $state_time==0}-->
+                                    团购结束还有：<br />
+                                    <div id="remainSeconds" style="display:none">{$diff_time}</div>
+                                    <p id="remainTime" class="deal-buy-ended">
+                                        <input  style="width:36px" readonly="true" type="text" value="{$timer['hour']}"/>时
+                                        <input readonly="true" type="text" value="{$timer['minute']}"/>分
+                                        <input style="width:36px" readonly="true" type="text" value="{$timer['second']}"/>秒
+                                    </p>
+                                        <!--{/if}-->
+                                    <!--{/if}-->
+
+			                      </div>
+                                             
+                             </div>
+                        </div>
+                        
+                        <div class="xit_goumai_you">
+                             <img src="${team_image($team['image1'])}" width="432" height="288" />
+                             <p style="height:65px; overflow:hidden"><span><!--{if strip_tags($team['summary'])!=$team['summary']}-->
+		{$team['summary']}
+		<!--{else}-->
+		${nl2br(strip_tags($team['summary']))}
+		 <!--{/if}--></span></p>
+                        </div>
+                   </div>
+              </div>
+              <div style="clear:both"></div>
+              <div><img src="/static/theme/YellowUMZZ/img/xit_xqxia.jpg" /></div>
+              </div>
+              
+              <!--miaoshu-->
+              <div class="xit_miaoshu">
+                 
+<!--{if trim(strip_tags($team['detail']))}-->
+<div class="blk">
+{$team['detail']}
+</div>
+<!--{/if}-->
+
+<!--{if trim(strip_tags($team['notice']))}-->
+<div class="blk">
+<h2><img src="/static/theme/YellowUMZZ/css/i/t4.gif" alt="特别提示" width="660" height="45" /></h2>
+ {$team['notice']}
+</div>
+<!--{/if}-->
+
+<!--{if trim(strip_tags($team['userreview']))}-->	
+<div class="blk">
+<h2><img src="/static/theme/YellowUMZZ/css/i/t6.gif" alt="他们说" width="660" height="45" /></h2>
+${userreview($team['userreview'])}
+</div>
+<!--{/if}-->
+
+<!--{if trim(strip_tags($team['systemreview']))}-->	
+<div class="blk">		
+<h2><img src="/static/theme/YellowUMZZ/css/i/t5.gif" alt="秀团说" width="660" height="45" /></h2>
+{$team['systemreview']}
+</div>
+<!--{/if}-->
+              </div>
+         </div>
+         <!--you-->
+         <!--{include view_right}-->
+    </div>
+    <!--{include block_team_pop}-->
+    <script language="javascript">  
+    var links="//商品//${$catename=getCB($team['group_id'],'group')}//${$brandname=getCB($team['brand_id'],'brand')}//URL{$_SERVER['REQUEST_URI']}";
+     _gaq.push(['_trackPageview',links]);
+    </script>
+<!-- modefiy by Yuanjing 2011-08-31 百分点 start -->
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var aa=document.getElementsByTagName('HEAD').item(0);
+	var nn=document.createElement("script"); 
+	nn.src="http://www.baifendian.com/api/js/bfd-jsapi-3.0.min.js";
+	nn.type="text/javascript";
+	nn.charset="utf-8";
+	aa.appendChild(nn);
+});
+
+
+function getReqId(url)
+{
+	var str = "req_id=";
+	idx = url.indexOf(str);
+	var reqid = url.slice(idx + str.length); 
+	return reqid;
+}
+
+function isFromRecommend(url)
+{
+	if (url.indexOf("req_id=") == -1){
+		return false;
+	} else {
+		return true;
+	}
+}
+
+window.bfd_onload = function()
+{
+	var client = new brs.Client("{$INI['system']['baifendian_id']}"); // 电商账号。
+	var p = new brs.PackedRequest();
+	
+	//商品信息
+	var item_id = "{$team['id']}";	// 当前商品的id，string类型	
+	var item_name = "{$team['title']}";	// 当前商品的name，string类型
+	var item_link = "http://{$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']}";	// 当前商品的链接url，string类型	
+	var image_link = "${team_image($team['image1'])}";	// 当前商品的图片的链接url，string类型
+	var item_price = {$team['team_price']};	// 当前商品的价格，double类型
+	var item_category = new Array("${$catename=getCB($team['group_id'],'group')}","all");	// 当前商品的类别和品牌，string[] 类型。
+  var item_description="${$catename=getCB($team['group_id'],'group')}";
+  
+	//用户信息
+
+	var user_id = "{$_SESSION['user_id']}";	// 当前用户的user_id，string类型。注意：user_id不是用户的真实注册名，而是其注册名的编号。
+	var session_id = "${cookieget('baifendianid')}";	// 当前用户的session_id，字符串类型
+	// 如果当前用户是匿名用户（判断匿名用户的逻辑，需要您按照自己网站的特点进行修改），其user_id用session_id代替
+	if (typeof(user_id) == 'undefined' || user_id == '' ){
+		user_id = session_id;
+	}
+	
+	// 先判断当前商品是否已经下架，如果单品页实在无法判断下架与否，请联系我们
+	if (false) {
+		p.r = new brs.RemoveItem(item_id);
+	} else {
+		var url = self.location.href;	
+		if (isFromRecommend(url)) { // 该商品页面是通过点击推荐栏中商品打开		
+			var req_id = getReqId(url);
+			// 上传用户的点击推荐行为 
+			p.cr = new brs.ClickRecItem(user_id, item_id, session_id, req_id);
+		} else { // 该商品页面是通过自然浏览行为打开
+			// 上传商品信息
+			p.a = new brs.AddItem(item_id, item_name, item_link);
+		    p.a.image_link = image_link;
+			p.a.price = item_price;
+			p.a.category = item_category;
+			p.a.description=item_description;
+			
+			// 上传用户的浏览行为
+			p.v = new brs.VisitItem(user_id, item_id, session_id);
+		}
+	}
+	
+		// 设置要返回的商品的个数
+	// 向百分点请求推荐，比如请求 "看过还看过"、"买过还买过"
+	
+	p.recVAV = new brs.RecByViewAlsoView(new Array(item_id), session_id, 10);
+	p.recBAB = new brs.RecByBoughtAlsoBought(new Array(item_id), session_id, 10);
+	
+	client.invoke(p, "cb_recommend");
+}
+
+// 回调函数：用于处理推荐请求的返回结果。即,将推荐结果展示在推荐栏中，您可以根据需要修改
+function cb_recommend(json) {
+	
+	if(json.recVAV[0]=='0' && json.recBAB[0]=='0'){
+		var revav=merge(json.recVAV[2],json.recBAB[2]);
+		 var recid=json.recVAV[1];
+		}else if(json.recVAV[0]=='0'){
+		var revav=json.recVAV[2];
+		var recid=json.recVAV[1];	
+		}else if(json.recBAB[0]=='0'){
+		var revav=json.recBAB[2];
+		var recid=json.recBAB[1];	
+		}else{
+		var revav='no';	
+			}
+		
+    if(revav !=='no'){
+	var revb=revav.join(',');	
+ jQuery.get('/ajax/baifendian.php',{vb:revb,typed:'team_view',req_id:recid},function(data){
+	 jQuery('#team_tj').html(data);
+	 } );		
+			}	
+}
+function merge(arr1, arr2){ 
+  for (var i = 0 ; i < arr1.length ; i ++ ){
+      for(var j = 0 ; j < arr2.length ; j ++ ){
+       if (arr1[i] === arr2[j]){
+         arr1.splice(i,1); //利用splice函数删除元素，从第i个位置，截取长度为1的元素
+    }
+      }
+  }
+  //alert(arr1.length)
+  for(var i = 0; i <arr2.length; i++){
+   arr1.push(arr2[i]);
+  }
+  return arr1;
+ }
+</script>    
+<!--end -->    
+<!--{include footer}-->
+<!-- 再营销跟踪代码，添加到首页和各单品页页面 -->
+<!-- Google Code for &#30331;&#38470;&#32593;&#31449; Remarketing List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1000683657;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "666666";
+var google_conversion_label = "2IVWCJ_I-QEQifGU3QM";
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1000683657/?label=2IVWCJ_I-QEQifGU3QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>

@@ -1,0 +1,169 @@
+<!--{include header}-->
+   <!--xit_banner2-->
+   <script src="/static/theme/xiutuan/js/xit_jsqiehuan.js" type="text/javascript"></script>
+    <div class="xit_dabanner"><script type="text/javascript" src="/static/theme/jingshui1/banner/banner.php?location=top"></script></div>
+<!--xiangqing-->
+    <div class="xit_xiangqing">
+
+        <!--zuo-->
+         <div class="xit_xiangqing_zuo">
+		<!--{loop $teams $tindex $team}-->
+              <div class="xit_zuoshang">
+              <div><img src="/static/theme/xiutuan/img/xit_xqshang.jpg" /></div>
+              <div class="xit_xqzgong">
+                   <!--fenxiangdao-->				   
+			<!--{include block_team_share}-->
+                   <h2>
+                   <!--{if $team['close_time']==0}-->
+                    <span>今日团购${++$mindex}：</span>
+                    <!--{/if}-->
+					<a href="/team.php?id={$team['id']}">{$team['title']}</a>  
+                   </h2>
+                   
+                   <div class="xit_goumai">
+                        <div class="xit_goumai_zuo">
+                             <div class="xit_goumai_shang">
+                                 <!--{if ($team['max_number']<=$team['now_number'])&&$team['max_number']>0}-->
+	<div class="xit_fudong_jieshu"><p>{$currency}<span>${moneyit($team['team_price'])}</span></p><img src="/static/theme/xiutuan/img/xit_mgl.jpg" /></div>
+	<!--{elseif $team['close_time']}-->
+	<div class="xit_fudong_jieshu"><p>{$currency}<span>${moneyit($team['team_price'])}</span></p><img src="/static/theme/xiutuan/img/xit_yijieshu.jpg" /></div>
+	<!--{elseif $buy_link=="" && $sub_link!=''}-->
+	<div class="xit_fudong"><p>{$currency}<span>${moneyit($team['team_price'])}</span></p> <a id="sub_link" href="{$sub_link}"><img src="/static/theme/xiutuan/img/xit_yyz.jpg" /></a></div>
+	<!--{else}-->
+	<div class="xit_fudong"><p>{$currency}<span>${moneyit($team['team_price'])}</span></p>
+	<a id="buy_link" ${$team['begin_time']<time()?'href="/team/buy.php?id='.$team['id'].'"':''} onclick="javascript:_gaq.push(['_trackEvent','buy_button', 'buy', '{$team['title']}/{$product_type['name']}']);">
+	<img src="/static/theme/xiutuan/img/xit_dagoumai.jpg"/>
+	</a>
+    </div>
+	<!--{/if}-->
+                                
+                                  
+                                  
+                                  <table class="tuan_info_tb" width="96%" align="center" border="0" cellpadding="0" cellspacing="0">
+                                         <tbody><tr>
+                                                <th width="35%">原价</th>
+                                                <th width="30%">折扣</th>
+                                                <th width="35%"><span>节省</span></th>
+                                         </tr>
+                                          <tr>
+                                                <td>￥<del>${moneyit($team['market_price'])}</del></td>
+                                                <td>${team_discount($team)}</td>
+                                                <td><span>{$currency}{$discount_price}</span></td>
+                                          </tr>
+    
+                                 </tbody></table>
+                             </div>
+                             
+                             
+                             <div class="xit_goumaichenggong">
+                               
+                                 
+                                 
+                                  <div class="xit_tuan_user">
+                                      <!--{if $state_time==1}-->
+	<!-- {if $state_teamsub} -->
+	<em><strong>{$team_sub_count}</strong></em>
+	<!-- {else} -->
+	<em><strong>0</strong></em>
+	<!-- {/if} -->
+<!--{else}-->
+  <em><strong>{$team['now_number']}</strong></em>
+<!--{/if}-->
+<!-- {if $team['draw_id']>0} -->
+人已参加抽奖
+<!--{else}-->
+	<!-- {if $state_teamsub} -->
+ 人已预约
+    <!-- {else} -->
+  人已购买
+    <!-- {/if} -->
+<br />
+数量有限，下单要快哟
+<!--{/if}-->
+                                  </div>
+                                
+					                       <!--{if $team['close_time']==0}-->
+                                    <!--{if $team['state']=='none'}-->
+                                    <div class="tuan_status s3">
+                                        <div class="bg_s">还差<strong><!--{if $state_time==1}-->{$team['min_number']}<!--{else}-->{$team['min_number']-$team['now_number']}<!--{/if}--></strong>个成团,可继续购买<br>
+                                        </div>
+                                    </div>
+                                    <!--{else}-->
+                                        <!--{if $state_time==1}-->
+                                            <div class="tuan_status s3">
+                                                <div class="bg_s">还差<strong>{$team['min_number']}</strong>个成团,可继续购买<br></div>
+                                            </div>
+                                        <!--{else}-->
+                                            <div class="tuan_status s1" >
+                                                <div class="bg_s">
+                                                    <h3>团购已成功</h3>
+                                                    <!--{if $team['max_number']>$team['now_number']||$team['max_number']==0}-->
+                                                    可继续购买
+                                                    <!--{/if}-->
+                                                </div>
+                                            </div>
+
+                                        <!--{/if}-->
+                                        
+                                    <!--{/if}-->
+                                <!--{else}-->
+                                    <div class="tuan_status s2">
+                                        <div class="bg_s">
+                                        <h3>团购已满</h3>
+                                        关注下一团
+                                        </div>
+                                    </div>
+                                <!--{/if}-->
+                                  
+                                  <div class="xit_tuan_time">
+                                                                    
+                                   
+					<!--{if $team['close_time']}-->
+                    <div class="deal-box deal-timeleft deal-off" id="deal-timeleft{$tindex}" curtime="{$now}000" diff="{$detail[$team['id']]['diff_time']}000">
+						<h3>本团购结束于</h3>
+						<div class="limitdate"><p class="deal-buy-ended">${date('Y-m-d', $team['close_time'])}<br>${date('H:i:s', $team['close_time'])}</p></div>
+					</div>
+					<!--{else}-->
+                    <div class="deal-box deal-timeleft deal-on" id="deal-timeleft{$tindex}" curtime="{$now}000" diff="{$detail[$team['id']]['diff_time']}000">
+						<h3>剩余时间</h3>
+						<div class="limitdate"><ul id="counter{$tindex}">
+						<!--{if $detail[$team['id']]['left_day']>0}-->
+							<li><span>{$detail[$team['id']]['left_day']}</span>天</li><li><span>{$detail[$team['id']]['left_hour']}</span>小时</li><li><span>{$detail[$team['id']]['left_minute']}</span>分钟</li>
+						<!--{else}-->
+							<li><span>{$detail[$team['id']]['left_hour']}</span>小时</li><li><span>{$detail[$team['id']]['left_minute']}</span>分钟</li><li><span>{$detail[$team['id']]['left_time']}</span>秒</li>
+						<!--{/if}-->
+						</ul></div>
+					</div>
+					<!--{/if}-->
+
+			                      </div>
+                                             
+                             </div>
+                        </div>
+                        
+                        <div class="xit_goumai_you">
+                             <a href="/team.php?id={$team['id']}"><img src="${team_image($team['image'])}" width="432" height="288" title="查看详情" /></a>
+                             <p style="height:65px; overflow:hidden"><span><!--{if strip_tags($team['summary'])!=$team['summary']}-->
+		{$team['summary']}
+		<!--{else}-->
+		${nl2br(strip_tags($team['summary']))}
+		 <!--{/if}--></span></p>
+                        </div>
+                   </div>
+              </div>
+              <div style="clear:both"></div>
+              <div><img src="/static/theme/xiutuan/img/xit_xqxia.jpg" /></div>
+              </div>
+			<div style="width:100%; height:10px; float:left;"></div>
+			<script>window.x_init_hook_multiclock{$tindex} = function(){X.misc.multiclock('deal-timeleft{$tindex}', 'counter{$tindex}');};</script>
+			<!--{/if}-->
+		<!--{/loop}-->
+              
+         </div>
+         <!--you-->
+         <!--{include view_right}-->
+         <!--{include block_side_tuangou}-->
+    </div>
+
+<!--{include footer}-->
+
